@@ -14,19 +14,19 @@ type S struct {
 }
 
 type Dummy struct {
-	UserId    int64  `json:"userId"`
-	Id        int64  `json:"id"`
-	Title     string `json:"title"`
-	Completed bool   `json:"completed"`
+	UserId    float32 `json:"userId"`
+	Id        int64   `json:"id"`
+	Title     string  `json:"title"`
+	Completed bool    `json:"completed"`
 }
 
 func main() {
 	hellofunc.Hello("fire emblem")
 	var d Dummy = Dummy{}
-	readThing("https://jsonplaceholder.typicode.com/todos/1", d)
+	readThing("https://jsonplaceholder.typicode.com/todos/1", &d)
 }
 
-func readThing(url string, s map[string]int) {
+func readThing(url string, s *Dummy) {
 	response, _ := http.Get(url)
 	body, _ := ioutil.ReadAll(response.Body)
 	err := json.Unmarshal(body, &s)

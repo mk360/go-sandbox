@@ -24,4 +24,6 @@ I'll do my best to list them here.
 - `p o i n t e r s`
 - What happens if I dereference a referenced pointer? (like `int something = *&otherthing`)
 - What happens if I initialize a struct through a pointer to another struct, then mess with both of them separately?
-- What happens if I fetch a floating-point value from an API (like, seriously, any API that returns a float) and assign it to an int? (current experiment)
+- What happens if I fetch a floating-point value from an API (like, seriously, any API that returns a float) and assign it to an int?
+Or what if I fetched an int and assigned it to a float? (current experiment)
+- Can I dynamically call functions simply by manipulating a pointer?
