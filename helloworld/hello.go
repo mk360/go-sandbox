@@ -15,7 +15,7 @@ type S struct {
 
 type Dummy struct {
 	UserId    float32 `json:"userId"`
-	Id        int64   `json:"id"`
+	Id        int64   `json:"A"`
 	Title     string  `json:"title"`
 	Completed bool    `json:"completed"`
 }
@@ -23,7 +23,10 @@ type Dummy struct {
 func main() {
 	hellofunc.Hello("fire emblem")
 	var d Dummy = Dummy{}
-	readThing("https://jsonplaceholder.typicode.com/todos/1", &d)
+	readThing("http://localhost:3000", &d)
+	// this quickly-cooked nodejs api server returns {
+	//	A: 3.94
+	// }
 }
 
 func readThing(url string, s *Dummy) {
