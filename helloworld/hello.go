@@ -1,13 +1,6 @@
 package main
 
-import (
-	"encoding/json"
-	"fmt"
-	"hello/hellofunc"
-	"io/ioutil"
-	"log"
-	"net/http"
-)
+import "fmt"
 
 type S struct {
 	X int
@@ -21,21 +14,14 @@ type Dummy struct {
 }
 
 func main() {
-	hellofunc.Hello("fire emblem")
-	var d Dummy = Dummy{}
-	readThing("http://localhost:3000", &d)
-	// this quickly-cooked nodejs api server returns {
-	//	A: 3.94
-	// }
+	var total int = 0
+	defer func() {
+		fmt.Println(total)
+	}()
+	recursive(&total)
 }
 
-func readThing(url string, s *Dummy) {
-	response, _ := http.Get(url)
-	body, _ := ioutil.ReadAll(response.Body)
-	err := json.Unmarshal(body, &s)
-	if err != nil {
-		log.Fatal(err)
-	} else {
-		fmt.Println(s)
-	}
+func recursive(currentCount *int) {
+	(*currentCount)++
+	recursive(currentCount)
 }
