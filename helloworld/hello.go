@@ -14,14 +14,15 @@ type Dummy struct {
 }
 
 func main() {
-	var total int = 0
-	defer func() {
-		fmt.Println(total)
-	}()
-	recursive(&total)
+	var total int8 = 0
+	for {
+		recursive(&total)
+		if total == 0 {
+			fmt.Println("Looped back at zero")
+		}
+	}
 }
 
-func recursive(currentCount *int) {
+func recursive(currentCount *int8) {
 	(*currentCount)++
-	recursive(currentCount)
 }

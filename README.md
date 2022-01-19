@@ -27,4 +27,5 @@ I'll do my best to list them here.
 - What happens if I fetch a floating-point value from an API (like, seriously, any API that returns a float) and assign it to an int? (damnit the program actually crashed)
 - Or what if I fetched an int and assigned it to a float?
 - Can I dynamically call functions simply by manipulating a pointer?
-- Can I create a stack overflow, and how long will it take me to? (current experiment)
+- Can I create a stack overflow, and how long will it take me to? 
+- Can I bypass int8 size limitations if, instead of increasing a variable's value directly, I increased a pointer's referenced variable's value?
