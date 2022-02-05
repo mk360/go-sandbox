@@ -16,8 +16,8 @@ I'll do my best to list them here.
 
 ### Ideas touched upon so far
 
-- [https://github.com/mk360/go-sandbox/commit/b8973b9ca4050a7d9b4e6ead2f381b6b2d8aab0f](Grasp the language basics again)
-- [https://github.com/mk360/go-sandbox/commit/b8973b9ca4050a7d9b4e6ead2f381b6b2d8aab0f](Split the main module into packages)
+- [Grasp the language basics again](https://github.com/mk360/go-sandbox/commit/b8973b9ca4050a7d9b4e6ead2f381b6b2d8aab0f)
+- [Split the main module into packages](https://github.com/mk360/go-sandbox/commit/b8973b9ca4050a7d9b4e6ead2f381b6b2d8aab0f)
 - [https://github.com/mk360/go-sandbox/commit/b8973b9ca4050a7d9b4e6ead2f381b6b2d8aab0f](Public and private functions)
 - [https://github.com/mk360/go-sandbox/commit/b8973b9ca4050a7d9b4e6ead2f381b6b2d8aab0f](How to express a function's return type, declaring vs initializing a variable, remembering that we can return more than one value (and usually it's an error))
 - [https://github.com/mk360/go-sandbox/commit/b8973b9ca4050a7d9b4e6ead2f381b6b2d8aab0f](First HTTP GET request, first struct)
