@@ -29,3 +29,5 @@ I'll do my best to list them here.
 - Can I dynamically call functions simply by manipulating a pointer?
 - [Can I create a stack overflow, and how long will it take me to?](https://github.com/mk360/go-sandbox/commit/a87416518067ace10634c5aeb6337618105636d7)
 - [Can I bypass int8 size limitations if, instead of increasing a variable's value directly, I increased a pointer's referenced variable's value?](https://github.com/mk360/go-sandbox/commit/7309301d64223aad79751f8e076db3dc92efc384)
+- [How can I get the current heap memory usage stats?](https://github.com/mk360/go-sandbox/commit/524f929860536cb5e0106a0a771a464727658945)
+- [How deep is the stack if we run a perfectly legitimate recursive function?](https://github.com/mk360/go-sandbox/commit/77aa1d6243a27acd149c6eb6668b7d2d4fa94d75)
