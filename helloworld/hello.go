@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 type S struct {
 	X int
 }
@@ -12,17 +14,18 @@ type Dummy struct {
 }
 
 func main() {
-	var total uint8 = 0
+	var i int = 0
 	for {
-		recursive(&total)
+		fmt.Println(i)
+		fibonacci(i)
+		i++
 	}
 }
 
-func recursive(currentCount *uint8) {
-	_ = Dummy{UserId: 224, Id: 3453, Title: "", Completed: true}
-	recursive(currentCount)
-}
-
-func bToMb(bytes uint64) uint64 {
-	return bytes / 1000 / 1000
+func fibonacci(n int) int {
+	if n >= 2 {
+		return fibonacci(n-1) + fibonacci(n-2)
+	} else {
+		return 1
+	}
 }
